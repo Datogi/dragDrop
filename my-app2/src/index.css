@@ -1,0 +1,48 @@
+.Pictures {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  height: 200px;
+  margin: 5px;
+}
+
+.Board {
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  border: 2px solid black;
+}
+.icon {
+  height: 24px;
+}
+.layer {
+  display: flex;
+  justify-content: space-between;
+}
+.fade-in {
+  animation: fadein 2s;
+}
+.fade-out {
+  animation: fadeout 6s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
